@@ -25,6 +25,6 @@ async def info(client, message):
     ]
     await SHIZUKA.send_message(
         chat_id=message.chat.id,
-        text=𝙲𝚑𝚕𝚘𝚎 𝙳𝚎𝚌𝚔𝚎𝚛_START,
+        text=SHIZUKA_START,
         reply_markup=InlineKeyboardMarkup(buttons),
     )
