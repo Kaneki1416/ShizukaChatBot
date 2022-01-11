@@ -1,5 +1,5 @@
-# Voics Chatbot Module Credits Pranav Ajay 🐰Github = Red-Aura 🐹 Telegram= @madepranav
-# @ShizukaChatBot support Now
+# Voics Chatbot Module Credits Pranav Ajay 🐰Github = kaneki1416 🐹 Telegram= @KaNeKi354_bot
+# @KaNeKi354_bot support Now
 import os
 from random import randint
 
@@ -32,22 +32,22 @@ async def ai_shizuka(url):
 @SHIZUKA.on_message(filters.command("shizuka"))
 async def shizuka(_, message):
     if len(message.command) < 2:
-        await message.reply_text("Shizuka AI Voice Chatbot")
+        await message.reply_text("𝙲𝚑𝚕𝚘𝚎 𝙳𝚎𝚌𝚔𝚎𝚛 AI Voice Chatbot")
         return
     text = message.text.split(None, 1)[1]
     shizuka = text.replace(" ", "%20")
-    m = await message.reply_text("Shizuka is the best...")
+    m = await message.reply_text("𝙲𝚑𝚕𝚘𝚎 𝙳𝚎𝚌𝚔𝚎𝚛 is the best...")
     try:
         L = await fetch(
             f"https://api.affiliateplus.xyz/api/chatbot?message={shizuka}&botname=Shizuka&ownername=Chankit&user=1"
         )
         chatbot = L["message"]
         VoiceAi = f"https://lyciavoice.herokuapp.com/shizuka?text={chatbot}&lang=en"
-        name = "shizuka"
+        name = "𝙲𝚑𝚕𝚘𝚎 𝙳𝚎𝚌𝚔𝚎𝚛"
     except Exception as e:
         await m.edit(str(e))
         return
-    await m.edit("Made By @NeuroticAssociation")
+    await m.edit("Made By @KaNeKi354_bot")
     ShizukaVoice = await ai_shizuka(VoiceAi)
     await m.edit("Repyping...")
     await message.reply_audio(audio=ShizukaVoice,
