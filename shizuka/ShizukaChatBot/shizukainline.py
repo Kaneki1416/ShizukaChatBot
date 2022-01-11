@@ -58,15 +58,15 @@ async def shizukachatbot(answers, text):
     result = await fetch(URL)
     buttons = InlineKeyboard(row_width=1)
     buttons.add(
-        InlineKeyboardButton("Shizuka",
+        InlineKeyboardButton("𝙲𝚑𝚕𝚘𝚎 𝙳𝚎𝚌𝚔𝚎𝚛",
                              switch_inline_query_current_chat="shizuka"))
     caption = f"""
 **You:** `{text}`
 **Shizuka:** `{result['cnt']}`"""
     answers.append(
         InlineQueryResultPhoto(
-            photo_url="https://telegra.ph/file/c8f2e290ba36052058154.jpg",
-            title="Shizuka",
+            photo_url="https://telegra.ph/file/71d85bebf14823103b201.jpg",
+            title="𝙲𝚑𝚕𝚘𝚎 𝙳𝚎𝚌𝚔𝚎𝚛",
             description=result["cnt"],
             caption=caption,
             reply_markup=buttons,
