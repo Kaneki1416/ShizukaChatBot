@@ -32,11 +32,11 @@ async def ai_shizuka(url):
 @SHIZUKA.on_message(filters.command("shizuka"))
 async def shizuka(_, message):
     if len(message.command) < 2:
-        await message.reply_text("Shizuka AI Voice Chatbot")
+        await message.reply_text("chloe AI Voice Chatbot")
         return
     text = message.text.split(None, 1)[1]
     shizuka = text.replace(" ", "%20")
-    m = await message.reply_text("Shizuka is the best...")
+    m = await message.reply_text("chloe is the best...")
     try:
         L = await fetch(
             f"https://api.affiliateplus.xyz/api/chatbot?message={shizuka}&botname=Shizuka&ownername=Chankit&user=1"
@@ -47,7 +47,7 @@ async def shizuka(_, message):
     except Exception as e:
         await m.edit(str(e))
         return
-    await m.edit("Made By @NeuroticAssociation")
+    await m.edit("Made By @KaNeKi354_bot")
     ShizukaVoice = await ai_shizuka(VoiceAi)
     await m.edit("Repyping...")
     await message.reply_audio(audio=ShizukaVoice,
