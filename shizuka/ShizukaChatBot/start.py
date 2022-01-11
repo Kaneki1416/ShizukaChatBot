@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from shizuka import SHIZUKA
 
 SHIZUKA_START = """
-I am Shizuka 『しずか』, An Intelligent ChatBot.[⠀](https://telegra.ph/file/f3696f6234fce4d4fb85d.jpg)
+I am 𝙲𝚑𝚕𝚘𝚎 𝙳𝚎𝚌𝚔𝚎𝚛 , An Intelligent ChatBot.[⠀](https://telegra.ph/file/71d85bebf14823103b201.jpg)
 """
 
 
@@ -17,14 +17,14 @@ async def info(client, message):
         ],
         [
             InlineKeyboardButton(
-                "Github",
-                url="https://github.com/NeuroticCoders/ShizukaChatBot"),
-            InlineKeyboardButton("Maintained by",
-                                 url="https://t.me/NeuroticAssociation"),
+                "DEVLOPER",
+                url="https://t.me/KaNeKi354_bot"),
+            InlineKeyboardButton("ABOUT MASTER",
+                                 url="https://t.me/AboutKenKaneki"),
         ],
     ]
     await SHIZUKA.send_message(
         chat_id=message.chat.id,
-        text=SHIZUKA_START,
+        text=𝙲𝚑𝚕𝚘𝚎 𝙳𝚎𝚌𝚔𝚎𝚛_START,
         reply_markup=InlineKeyboardMarkup(buttons),
     )
